@@ -1,0 +1,165 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+}
+
+nav{
+    background:rgb(108,108,207);
+    padding:15px 40px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    background:white;
+    color:rgb(108,108,207);
+    padding:8px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.details-container{
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    gap:40px;
+    padding:20px;
+}
+
+.car-image img{
+    width:100%;
+    max-width:550px;
+    border-radius:10px;
+}
+
+.car-content{
+    flex:1;
+}
+
+.car-title{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.rating{
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.price-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.new-price{
+    font-size:28px;
+    font-weight:bold;
+    color:rgb(108,108,207);
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.discount{
+    background:#e8f5e9;
+    color:green;
+    padding:4px 8px;
+    border-radius:4px;
+    font-size:14px;
+}
+
+.short-desc{
+    margin-bottom:25px;
+    color:#555;
+    line-height:1.6;
+}
+
+.highlights{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.highlight-box{
+    background:#ffffff;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.highlight-box h4{
+    margin-bottom:5px;
+    color:rgb(108,108,207);
+}
+
+.button-group{
+    display:flex;
+    gap:15px;
+}
+
+.order-btn{
+    background:rgb(108,108,207);
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+
+.order-btn:hover{
+    background:#007bff;
+}
+
+
+
+@media(max-width:992px){
+    .details-container{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .highlights{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .price-section{
+        justify-content:center;
+    }
+}
+
+@media(max-width:600px){
+    .highlights{
+        grid-template-columns:1fr;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}

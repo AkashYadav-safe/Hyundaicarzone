@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+}
+
+/* Navbar */
+nav {
+    background-color: rgb(108, 108, 207);
+    padding: 15px 40px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    background-color: white;
+    color: rgb(108, 108, 207);
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Container */
+.auth-container {
+    max-width: 420px;
+    width: 100%;
+    margin: 60px auto;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tabs label {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(110, 110, 216);
+    border-bottom: 2px solid #ccc;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* active tab */
+#login:checked ~ .tabs label[for="login"],
+#register:checked ~ .tabs label[for="register"] {
+    border-bottom: 3px solid rgb(108, 108, 207);
+    color: rgb(108, 108, 207);
+}
+
+/* Forms */
+.form {
+    display: none;
+    
+}
+
+#login:checked ~ .login-form,
+#register:checked ~ .register-form {
+    display: block;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+.form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px; 
+    background: rgb(108, 108, 207);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #007bff;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .auth-container {
+        margin: 40px 20px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .auth-container {
+        margin: 20px 15px;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .tabs label {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form input {
+        padding: 10px;
+        margin-bottom: 18px;
+    }
+
+    .form button {
+        margin-top: 15px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyundaiCarZone</title>
+    <link rel="stylesheet" href="Hyundaihome.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+       
+        <div class="nav-logo">
+            <img src="data:image/png;base64,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" alt="Hyundai car zon">
+          <span class="logo-text">Hyundai car zone</span>
+        </div>
+
+        
+        <div class="nav-search">
+       <input type="text" id="searchInput"
+           placeholder="Search cars, models..."
+           onkeyup="handleEnter(event)">
+       <button onclick="searchCar()">🔍</button>
+      </div>
+
+       
+        <ul class="nav-menu">
+            <li><a href="Hyundai.html">Home</a></li>
+            <li><a href="services.html">Services</a></li> 
+            <li><a href="Help.html">Help</a></li>
+        </ul>
+
+        <div class="nav-login">
+            <button><a href="login.html">login / Register</a></button>
+            
+        </div>
+
+    </nav>
+</header>
+ <div class="hero-section">
+
+    <div class="slider">
+        <img src="hero-image1.avif" class="slide active">
+        <img src="hero-image2.avif" class="slide">
+        <img src="hero-image3.avif" class="slide">
+    </div>
+
+</div>
+ 
+ <div class="mainCarPanel">
+    
+ <section class="cars-section">
+    <h2>Most Searched Hyundai Cars</h2>
+
+    <div class="car-container">
+
+        <div class="car-card">
+            <img src="creta.avif" alt="Hyundai Creta">
+            <h3>Hyundai Creta</h3>
+            <p>₹10.62 - 19.11 Lakh*</p>
+            <a href="creta.html">
+            <button>View car</button>
+           </a>
+        </div>
+
+        <div class="car-card">
+            <img src="vanue.avif" alt="Hyundai Venue">
+            <h3>Hyundai Venue</h3>
+            <p>₹7.83 - 13.77 Lakh*</p>
+            <a href="vanue.html">
+           <button>View car</button>
+            </a>
+        </div>
+
+        <div class="car-card">
+            <img src="verna.avif" alt="Hyundai verna">
+            <h3>Hyundai verna</h3>
+            <p>11.10 - 14.40 Lakh*</p>
+            <a href="verna.html">
+         <button>View car</button>
+        </a>
+        </div>
+
+        <div class="car-card">
+            <img src="alcazar.avif" alt="Hyundai Alcazar">
+            <h3>Hyundai Alcazar</h3>
+            <p>₹17.15 - 20.60 Lakh*</p>
+           <a href="alcazar.html">
+          <button>View car</button>
+         </a>
+        </div>
+        <div class="car-card">
+            <img src="exter.avif" alt="Hyundai exter">
+            <h3>Hyundai exter</h3>
+            <p>₹6.15 - 10.65 Lakh*</p>
+            <a href="exter.html">
+           <button>View car</button>
+          </a>
+        </div>
+        <div class="car-card">
+            <img src="aura.avif" alt="Hyundai aura">
+            <h3>Hyundai aura</h3>
+            <p>₹7.15 - 8.70 Lakh*</p>
+           <a href="aura.html">
+         <button>View car</button>
+         </a>
+        </div>
+        <div class="car-card">
+            <img src="i10.avif" alt="Hyundai i10">
+            <h3>Hyundai i10</h3>
+            <p>₹5.20 - 7.30 Lakh*</p>
+           <a href="i10.html">
+         <button>View car</button>
+         </a>
+        </div>
+        <div class="car-card">
+            <img src="santro.avif" alt="Hyundai santro">
+            <h3>Hyundai santro</h3>
+            <p>₹7.15 - 9.70 Lakh*</p>
+            <a href="santro.html">
+           <button>View car</button>
+         </a>
+        </div>
+        
+   
+   <div class="view-more-wrapper">
+    <a href="morecar.html" class="view-more-btn">
+        View More Cars <span class="arrow">→</span>
+    </a>
+</div>
+
+</section> 
+ <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>HyundaiCarZone</h3>
+            <p>Your trusted destination for Hyundai cars, prices, and offers.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="Hyundai.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Help.html">help</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Popular Cars</h4>
+            <ul>
+                <li><a href="creta.html">Creta</a></li>
+                <li><a href="verna.html">Venue</a></li>
+                <li><a href="verna.html">Verna</a></li>
+                <li><a href="alcazar.html">Alcazar</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: akashydv7400@gmail.com</p>
+            <p>Phone: +91 7400813193</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 HyundaiCarZone. All Rights Reserved.
+    </div>
+</footer>
+</div>
+  
+<script src="Hyundai.js"></script>
+</body>
+</html>

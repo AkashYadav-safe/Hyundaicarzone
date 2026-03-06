@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HyundaiCarZone</title>
+<link rel="stylesheet" href="order-car.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>Hyundai Car Booking</h2>
+    <a href="Hyundai.html">⬅ Back</a>
+</nav>
+
+<div class="booking-wrapper">
+
+    <div class="booking-card">
+
+        <h2>Car & Customer Details</h2>
+        <p class="sub-text">Fill the form below to confirm your booking.</p>
+
+        
+
+            <!-- CAR DETAILS SECTION -->
+            <h3 class="section-title">Car Information</h3>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Car Brand</label>
+                    <input type="text" placeholder="Enter car brand" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Car Model</label>
+                    <input type="text" placeholder="Enter car model" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Variant</label>
+                    <input type="text" placeholder="Enter variant">
+                </div>
+
+                <div class="input-group">
+                    <label>Price (₹)</label>
+                    <input type="number" placeholder="Enter price" required>
+                </div>
+            </div>
+
+            <!-- CUSTOMER DETAILS SECTION -->
+            <h3 class="section-title">Customer Information</h3>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="Enter mobile number" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter email address">
+                </div>
+
+                <div class="input-group">
+                    <label>City</label>
+                    <input type="text" placeholder="Enter your city" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Delivery Address</label>
+                <textarea rows="3" placeholder="Enter full address"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>Payment Mode</label>
+                <select required>
+                    <option value="">Select payment option</option>
+                    <option>Full Payment</option>
+                    <option>EMI</option>
+                </select>
+            </div>
+
+            <button id="bookBtn" type="submit" class="confirm-btn">
+                Confirm Booking
+            </button>
+
+       
+    </div>
+
+</div>
+<script src="booking.js"></script>
+</body>
+</html>

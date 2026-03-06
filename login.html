@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundaicarzon</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+     <nav>
+    <span>Account</span>
+    <a href="Hyundai.html" class="back-btn">⬅ Back</a>
+</nav>
+
+<div class="auth-container">
+
+    <!-- radio buttons -->
+    <input type="radio" name="tab" id="login" checked>
+    <input type="radio" name="tab" id="register">
+
+    <!-- tabs -->
+    <div class="tabs">
+        <label for="login">Login</label>
+        <label for="register">Register</label>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div class="form login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button onclick="loginUser()">Login</button>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div class="form register-form">
+        
+        <input type="text" id="regName" placeholder="Full Name" required>
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPass" placeholder="Password" required>
+        <input type="password" id="regConfirmPass" placeholder="Confirm Password" required>
+        <button onclick="registerUser()">Register</button>
+       
+    </div>
+
+</div>
+  <script src="auth.js"></script>
+</body>
+</html>
